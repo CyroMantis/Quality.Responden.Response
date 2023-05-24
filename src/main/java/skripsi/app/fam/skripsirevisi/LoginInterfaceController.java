@@ -57,9 +57,8 @@ public class LoginInterfaceController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-
+    //      TODO
     }
-
     @FXML
     private void btnloginAction(ActionEvent event) {
         if (txtus.getText().isBlank() == false && txtus.getText().isBlank() == false) {
