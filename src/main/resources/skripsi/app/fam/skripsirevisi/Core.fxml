@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="978.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="skripsi.app.fam.skripsirevisi.CoreController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="301.0" styleClass="BackgroundAnchorReg" stylesheets="@style.css">
+         <children>
+            <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="11.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/education-bag-learning-8-svgrepo-com.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="130.0" layoutY="57.0" text="INPUT DATA" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="152.0" text="NIM           :" textFill="WHITE" />
+            <Label layoutX="26.0" layoutY="184.0" text="Nama        :" textFill="WHITE" />
+            <Label layoutX="26.0" layoutY="215.0" text="Semester   :" textFill="WHITE" />
+            <Label layoutX="26.0" layoutY="247.0" text="reguler     :" textFill="WHITE" />
+            <Label layoutX="26.0" layoutY="289.0" text="P.Pembelajaran      :" textFill="WHITE" />
+            <Label layoutX="26.0" layoutY="320.0" text="P. Administrasi       :" textFill="WHITE" />
+            <Label layoutX="26.0" layoutY="350.0" text="P. Prasarana           :" textFill="WHITE" />
+            <Label layoutX="26.0" layoutY="381.0" text="P. Perpustakaan     :" textFill="WHITE" />
+            <Label layoutX="26.0" layoutY="410.0" text="P. Kemahasiswaan :" textFill="WHITE" />
+            <TextField fx:id="inputNimSectionCore" layoutX="95.0" layoutY="148.0" prefHeight="25.0" prefWidth="185.0" promptText="NIM" />
+            <TextField fx:id="inputNamaSectionCore" layoutX="95.0" layoutY="180.0" prefHeight="25.0" prefWidth="185.0" promptText="Nama" />
+            <ComboBox fx:id="inputSemesterSectionCore" layoutX="176.0" layoutY="211.0" prefHeight="25.0" prefWidth="103.0" promptText="Semester" style="-fx-background-color: white;" />
+            <ComboBox fx:id="inputRegulerSectionCore" layoutX="176.0" layoutY="243.0" prefHeight="25.0" prefWidth="102.0" promptText="Reguler" style="-fx-background-color: white;" />
+            <TextField fx:id="inputPPJSectionCore" layoutX="142.0" layoutY="285.0" prefHeight="25.0" prefWidth="138.0" promptText="Pembelajaran" />
+            <TextField fx:id="inputPADSectionCore" layoutX="142.0" layoutY="316.0" prefHeight="25.0" prefWidth="138.0" promptText="Administrasi" />
+            <TextField fx:id="inputPRSSectionCore" layoutX="142.0" layoutY="346.0" prefHeight="25.0" prefWidth="138.0" promptText="Prasarana" />
+            <TextField fx:id="inputPTKSectionCore" layoutX="142.0" layoutY="377.0" prefHeight="25.0" prefWidth="138.0" promptText="Perpustakaan" />
+            <TextField fx:id="inputPKMHSectionCore" layoutX="142.0" layoutY="406.0" prefHeight="25.0" prefWidth="138.0" promptText="Kemahasiswaan" />
+            <Button fx:id="buttonSave" alignment="CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="461.0" mnemonicParsing="false" onAction="#buttonSaveAction" prefHeight="25.0" prefWidth="256.0" style="-fx-background-color: white;" stylesheets="@style.css" text="Save" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonEdit" alignment="CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="496.0" mnemonicParsing="false" onAction="#buttonEditAction" prefHeight="25.0" prefWidth="256.0" style="-fx-background-color: white;" stylesheets="@style.css" text="Edit" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonDelete" alignment="CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="565.0" mnemonicParsing="false" onAction="#buttonDeleteAction" prefHeight="25.0" prefWidth="256.0" style="-fx-background-color: white;" stylesheets="@style.css" text="Delete" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonCkear" alignment="CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="530.0" mnemonicParsing="false" onAction="#buttonClearAction" prefHeight="25.0" prefWidth="256.0" style="-fx-background-color: white;" stylesheets="@style.css" text="Clear" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="50.0" fitWidth="57.0" layoutX="87.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/pointer-left-svgrepo-com.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="57.0" layoutX="230.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/pointer-right-svgrepo-com.png" />
+               </image>
+            </ImageView>
+            <Group id="group" fx:id="logoutButton" layoutX="16.0" layoutY="637.0" onMouseClicked="#logoutButtonAction" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="38.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/arrow-direction-left-6-svgrepo-com.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="45.0" layoutY="6.0" stylesheets="@style.css" text="Logout" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+         </children>
+      </AnchorPane>
+      <SplitPane dividerPositions="0.08166189111747851, 0.4871060171919771" orientation="VERTICAL" prefHeight="700.0" prefWidth="618.0" style="-fx-background-color: white;">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="141.0" prefWidth="616.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="31.0" layoutY="28.0" text="Pencarian      :" />
+                  <TextField fx:id="pencarianBox" layoutX="124.0" layoutY="24.0" prefHeight="25.0" prefWidth="468.0" promptText="Nim/Nam" />
+                  <ImageView fitHeight="157.0" fitWidth="154.0" layoutX="208.0" layoutY="138.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/logo_unpam.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="52.0" layoutY="87.0" prefHeight="79.0" prefWidth="513.0" text="APLIKASI FAM UNTUK SISTEM PENDUKUNG KEPUTUSAN DALAM MENENTUKAN TINGKAT KEPUASAN MAHASISWA UNPAM TERHADAP PEMBELAJARAN TATAP MUKA TERBATAS" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="52.0" layoutY="215.0" prefHeight="50.0" prefWidth="162.0" text="Muhammad Qifli Hidayatullah 181011400811" wrapText="true" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="277.0" prefWidth="618.0" style="-fx-background-color: white;">
+               <children>
+                  <TableView fx:id="tableInputView" layoutX="5.0" layoutY="7.0" onMousePressed="#selectDataTableInputView" prefHeight="262.0" prefWidth="612.0" stylesheets="@style.css">
+                    <columns>
+                      <TableColumn fx:id="nimColumnInput" editable="false" prefWidth="116.0" text="NIM" />
+                        <TableColumn fx:id="namaColumnInput" editable="false" prefWidth="144.0" text="Nama" />
+                        <TableColumn fx:id="semesterColumnInput" editable="false" prefWidth="65.0" text="Semester" />
+                        <TableColumn fx:id="regulerColumnInput" editable="false" prefWidth="57.0" text="Reguler" />
+                        <TableColumn fx:id="ppjColumnInput" editable="false" prefWidth="45.0" text="PPJ" />
+                        <TableColumn fx:id="padColumnInput" editable="false" prefWidth="42.0" text="PAD" />
+                        <TableColumn fx:id="prsColumnInput" editable="false" prefWidth="37.0" text="PRS" />
+                        <TableColumn fx:id="ptkColumnInput" editable="false" prefWidth="43.0" text="PTK" />
+                        <TableColumn fx:id="pkmhColumnInput" editable="false" prefWidth="61.0" text="PKMH" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="618.0">
+               <children>
+                  <Label layoutX="23.0" layoutY="21.0" text="TM   :">
+                     <font>
+                        <Font name="SansSerif Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tidakMemuaskanBox" editable="false" focusTraversable="false" layoutX="81.0" layoutY="19.0" prefHeight="25.0" prefWidth="50.0" promptText="0" />
+                  <Label layoutX="148.0" layoutY="21.0" text="CM   :">
+                     <font>
+                        <Font name="SansSerif Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="cukupMemuaskanBox" editable="false" focusTraversable="false" layoutX="206.0" layoutY="19.0" prefHeight="25.0" prefWidth="50.0" promptText="0" />
+                  <Label layoutX="286.0" layoutY="21.0" text="SM   :">
+                     <font>
+                        <Font name="SansSerif Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="sangatMemuaskanBox" editable="false" focusTraversable="false" layoutX="344.0" layoutY="19.0" prefHeight="25.0" prefWidth="50.0" promptText="0" />
+                  <Button fx:id="prosesButton" alignment="CENTER" contentDisplay="CENTER" layoutX="469.0" layoutY="18.0" mnemonicParsing="false" onAction="#prosesButtonAction" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: #ff9900;" stylesheets="@style.css" text="Proses" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <TableView fx:id="tableProsesView" layoutY="67.0" prefHeight="281.0" prefWidth="618.0" stylesheets="@style.css">
+                    <columns>
+                      <TableColumn fx:id="nimColumnProses" prefWidth="154.0" text="NIM" />
+                      <TableColumn fx:id="namaColumnProses" prefWidth="211.0" text="Nama" />
+                        <TableColumn fx:id="hasilColumnProses" prefWidth="100.0" text="Hasil" />
+                        <TableColumn fx:id="keputusanColumnProses" prefWidth="149.0" text="Keputusan" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <AnchorPane prefHeight="700.0" prefWidth="63.0" style="-fx-background-color: white;" stylesheets="@style.css" />
+   </children>
+</HBox>

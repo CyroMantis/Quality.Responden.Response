@@ -1,0 +1,159 @@
+/*Pengaturan Backgroun Loginframe(Scene)) */
+#Loginbg{
+    -fx-background-image: url("../Resource/Image/Geo_Yellow.jpg");
+    /*-fx-background-image: url("../RegisterInterface.fxml");*/
+    -fx-background-repeat: stretch;
+    -fx-background-size: auto;
+    -fx-background-position: center center;
+}
+/*Pengaturan Backgroun Loginframe(Scene)) */
+#daftarbg{
+    -fx-background-image: url("../Resource/Image/brush.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: auto;
+    -fx-background-position: center center;
+}
+
+/*Pengaturan background Register*/
+.BackgroundAnchorReg{
+    -fx-background-color:#ff9900;
+}
+
+
+/*Pengaturan Backgroun MAINBG (Scene)) */
+#mainbg{
+    -fx-background-image: url("../Resource/Image/Geo_Yellow.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: auto;
+    -fx-background-position: center center;
+}
+/*Pengaturan Backgroun INPUTFRAME (Scene)) */
+#inputframe{
+    -fx-background-image: url("../Resource/Image/cloudyellow.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: auto;
+    -fx-background-position: center center;
+}
+/*Pengaturan Backgroun ABOUT (Scene)) */
+#aboutbg{
+
+    -fx-background-image: url("../Resource/Image/bluecrystal.jpg");
+    -fx-background-repeat: space;
+    -fx-background-size: auto;
+    -fx-background-position: center center;
+}
+#aboutbg .pane{
+    -fx-background-image: url("../Resource/Image/LukxuryGrey.jpg");
+    -fx-background-color:#ffffff;
+    -fx-border-color: #ffcc99;
+    -fx-border-width: 5;
+
+}
+#aboutbg .pane .inside{
+    /*Pengaturan Style Button Biru Gelap*/
+    -fx-border-color: black;
+    -fx-hgap: 20px;
+    -fx-padding: 40px;
+    -fx-border-radius: 50px;
+    -fx-border-width: 5px;
+    -fx-border-color: black;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+}
+/*Button Style*/
+
+.button:hover {
+    -fx-background-color: transparent;
+    -fx-scale-y: 1.1;
+}
+
+.button:pressed {
+    -fx-scale-y: 0.9;
+    -fx-scale-x: 0.9;
+}
+
+#group:hover{
+    -fx-background-color: transparent;
+    -fx-scale-y: 1.1;
+}
+#group:pressed {
+    -fx-scale-y: 0.9;
+    -fx-scale-x: 0.9;
+}
+
+#hyperDaftar:hover{
+    -fx-background-color: transparent;
+    -fx-underline: true;
+    -fx-scale-y: 1.1;
+}
+/*table style*/
+* {
+    -fx-primary-color: #007acc;
+    -fx-secondary-color: #4B6EAF;
+    -fx-accent-color: #B6FF00;
+    -fx-grey-color: #b9b9b9;
+    -fx-light-grey-color: #d1d1d1;
+    -fx-lightest-grey-color: #F9F9FB;
+
+    -fx-focus-color: -fx-secondary-color;
+}
+.table-button {
+    -fx-background-color: -fx-primary-color;
+    -fx-cursor: hand;
+}
+.table-button:hover{
+    -fx-background-color: transparent;
+}
+.table-view {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent; /* OR  -fx-background-insets: 0.0; */
+}
+.table-view .column-header-background,
+.table-view .column-header-background .filler,
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+.table-view .column-header {
+    -fx-background-color: -fx-light-grey-color;
+    -fx-border-color: -fx-grey-color;
+}
+.table-view .column-header .label{
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+/* This is just magic */
+.table-row-cell:filled {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent -fx-lightest-grey-color -fx-lightest-grey-color -fx-lightest-grey-color, transparent;
+
+}
+.table-row-cell:empty {
+    -fx-background-color: transparent;
+}
+.table-row-cell:filled:hover {
+    -fx-background-color: -fx-light-grey-color;
+}
+.table-row-cell:filled:selected:hover {
+    -fx-background-color: -fx-light-grey-color;
+}
+.table-row-cell:filled:selected {
+    -fx-background-color: #eaeaea;
+    -fx-background-insets: 0.0;
+    -fx-background-radius: 0.0;
+}
+.table-row-cell:filled:selected .table-cell {
+    -fx-text-fill: black;
+}
+.table-view .cell:filled{
+
+    -fx-alignment: center;
+}
+.check-box-table-cell > .check-box:selected .box .mark {
+    -fx-background-color: white;
+}
+.check-box-table-cell > .check-box:selected .box{
+    -fx-background-color: -fx-accent-color;
+}
+.table-view .placeholder .label {
+    -fx-text-fill: red;
+
+}

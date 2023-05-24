@@ -1,0 +1,27 @@
+To compile:
+javac --module-path "C:\Users\ASUS\Desktop\SKRIPSI\2022\Program\javafx-sdk-18\lib" --add-modules javafx.controls <Nama filenya>.java
+
+*<Nama filenya> isi dengan nama filenya*
+
+To Run:
+java --module-path "C:\Users\ASUS\Desktop\SKRIPSI\2022\Program\javafx-sdk-18\lib" --add-modules javafx.controls <Nama filenya>.java
+
+*Masih sama kayak sebelumnya bedanya dari javac ke -> java*
+
+
+
+--module-path "/Users/qifli/Document/Skripsi/NetBeansProjects/TugasAkhirSkrips/scr/QualityResponAppFAM/Resource/Library" --add-modules javafx.controls,javafx.fxml
+
+//untuk membuat table view
+tb_hasilpenilaian_fam
+tb_hasilpenilaian_fam
+create view tblview as select jadwalfilm.judul, 
+				jadwalfilm.waktu,
+				namaStdio
+				from
+				jadwalfilm,
+				stdio 
+				where 
+				jadwalfilm.id_film=stdio.id_film
+
+ 

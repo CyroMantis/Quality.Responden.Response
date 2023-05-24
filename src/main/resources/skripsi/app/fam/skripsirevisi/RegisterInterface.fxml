@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="590.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="skripsi.app.fam.skripsirevisi.RegisterInterfaceController">
+   <top>
+      <AnchorPane prefHeight="70.0" prefWidth="530.0" styleClass="BackgroundAnchorReg" stylesheets="@style.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="61.0" fitWidth="333.0" layoutX="36.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/White.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="128.0" layoutY="22.0" text="User Registration" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="94.0" layoutY="364.0" text="Password" />
+            <Label layoutX="94.0" layoutY="36.0" text="Nama Depan" />
+            <Label layoutX="307.0" layoutY="33.0" text="Nama Belakang" />
+            <Label layoutX="94.0" layoutY="92.0" text="Nama Lengkap" />
+            <Label layoutX="94.0" layoutY="148.0" text="NIDN" />
+            <Label layoutX="94.0" layoutY="205.0" text="E-Mail" />
+            <Label layoutX="94.0" layoutY="311.0" text="Username" />
+            <TextField fx:id="namaDepanBox" layoutX="93.0" layoutY="55.0" prefHeight="25.0" prefWidth="172.0" promptText="Nama Depan" />
+            <TextField fx:id="namaBelakangBox" layoutX="307.0" layoutY="52.0" prefHeight="25.0" prefWidth="188.0" promptText="Nama Belakang" />
+            <TextField fx:id="namaLengkapBox" layoutX="93.0" layoutY="111.0" prefHeight="25.0" prefWidth="403.0" promptText="NamaLengkap" />
+            <TextField fx:id="NIDN_BOX" layoutX="93.0" layoutY="167.0" prefHeight="25.0" prefWidth="175.0" promptText="NIDN" />
+            <TextField fx:id="EmailBox" layoutX="93.0" layoutY="224.0" prefHeight="25.0" prefWidth="178.0" promptText="E-Mail" />
+            <Label layoutX="95.0" layoutY="260.0" text="Nomor Telphone" />
+            <TextField fx:id="nomorTelphoneBox" layoutX="94.0" layoutY="286.0" prefHeight="25.0" prefWidth="177.0" promptText="+62" />
+            <TextField fx:id="usernameBox" layoutX="93.0" layoutY="330.0" prefHeight="25.0" prefWidth="266.0" promptText="Username" />
+            <PasswordField fx:id="PasswordBoxRegis" layoutX="93.0" layoutY="382.0" prefHeight="25.0" prefWidth="265.0" promptText="Password" />
+            <Label layoutX="395.0" layoutY="334.0" text="ex : GoldenBug" textFill="#ababab" />
+            <Label layoutX="395.0" layoutY="386.0" text="ex: Ferocius1234" textFill="#b2b2b2" />
+            <Label layoutX="95.0" layoutY="417.0" text="Konfirmasi Password" />
+            <PasswordField fx:id="CekBoxPasswordRegis" layoutX="93.0" layoutY="437.0" prefHeight="25.0" prefWidth="265.0" promptText="Konfirmasi ulang " />
+            <CheckBox fx:id="cekBoxSetuju" layoutX="93.0" layoutY="475.0" mnemonicParsing="false" onAction="#cekBoxSetujuAction" text="Mengetahui dan menyetuji persyaratan yang berlaku" />
+            <Button fx:id="btnDaftar" disable="true" layoutX="93.0" layoutY="508.0" mnemonicParsing="false" onAction="#btnDaftarAction" prefHeight="27.0" prefWidth="407.0" style="-fx-background-color: #ff9900;" text="Daftar" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnMasuk" layoutX="93.0" layoutY="543.0" mnemonicParsing="false" onAction="#btnMasukAction" prefHeight="27.0" prefWidth="406.0" style="-fx-background-color: #ff9900;" text="Masuk" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="203.0" layoutY="260.0" text="Optional" textFill="#ababab" />
+            <Label fx:id="ConfirmationEventRegister" alignment="CENTER" layoutX="-1.0" layoutY="10.0" prefHeight="19.0" prefWidth="590.0" textFill="#23a4ff">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="ConfirmationEventPasswordCekVer" alignment="CENTER" layoutX="94.0" layoutY="416.0" prefHeight="19.0" prefWidth="404.0" textFill="#ff5151">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="ConfirmationEventRegisterEror" alignment="CENTER" layoutX="-1.0" layoutY="11.0" prefHeight="19.0" prefWidth="590.0" textFill="#ff4c4c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
